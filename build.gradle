@@ -1,0 +1,15 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+version = '1.0'
+sourceCompatibility = '1.7'
+targetCompatibility = '1.7'
+mainClassName = 'io.jboverfelt.tika.example.TikaTest'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'org.apache.tika:tika-parsers:1.7'
+}
